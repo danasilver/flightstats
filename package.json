@@ -1,6 +1,6 @@
 {
   "name": "flightstats",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A CORS enabled extension to Flightstats.",
   "main": "app.js",
   "author": "Dana Silver <dsilver@middlebury.edu>",
