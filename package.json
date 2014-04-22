@@ -1,0 +1,12 @@
+{
+  "name": "flightstats",
+  "version": "0.0.1",
+  "description": "A CORS enabled extension to Flightstats.",
+  "main": "app.js",
+  "author": "anonymous",
+  "license": "MIT",
+  "dependencies": {
+    "request": "~2.34.0",
+    "express": "~4.0.0"
+  }
+}
