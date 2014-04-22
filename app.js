@@ -3,7 +3,7 @@ var express = require('express'),
 
 var app = express();
 
-var flightstats_url = 'https://api.flightstats.com';
+var flightstatsUrl = 'https://api.flightstats.com';
 
 app.get('/', function(req, res) {
   res.send(200, '<p>See documentation for API usage.<p>' +
@@ -15,7 +15,7 @@ app.get('*', function(req, res) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "X-Requested-With");
 
-  request.get(flightstats_url + req.originalUrl, function(err, r_res, body) {
+  request.get(flightstatsUrl + req.originalUrl, function(err, r_res, body) {
     if (err) res.send(500);
     else if (r_res.statusCode === 200) res.send(JSON.parse(body));
     else res.send(body);
