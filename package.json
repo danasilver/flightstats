@@ -3,10 +3,14 @@
   "version": "0.0.1",
   "description": "A CORS enabled extension to Flightstats.",
   "main": "app.js",
-  "author": "anonymous",
+  "author": "Dana Silver <dsilver@middlebury.edu>",
   "license": "MIT",
+  "private": true,
   "dependencies": {
     "request": "~2.34.0",
     "express": "~4.0.0"
+  },
+  "engines": {
+    "node": "0.10.x"
   }
 }
